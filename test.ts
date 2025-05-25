@@ -1,0 +1,1 @@
+interface Obj{a:number;b:string;}let x:number=42;const obj:Obj={a:1,b:'test'};function add(a:number,b:number):number{return a+b;}const arr:Array<number|string|boolean>=[1,'two',true];
