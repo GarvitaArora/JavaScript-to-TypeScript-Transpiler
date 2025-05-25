@@ -1,0 +1,32 @@
+{
+    "name": "js-to-ts-transpiler",
+    "version": "1.0.0",
+    "description": "A transpiler that converts JavaScript to TypeScript with type inference and advanced features",
+    "main": "cli.js",
+    "bin": {
+        "js-to-ts": "cli.js"
+    },
+    "scripts": {
+        "test": "node index.js",
+        "start": "node cli.js"
+    },
+    "keywords": [
+        "javascript",
+        "typescript",
+        "transpiler",
+        "type-inference",
+        "ast"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/core": "^7.23.0",
+        "@babel/generator": "^7.27.1",
+        "@babel/parser": "^7.27.2",
+        "@babel/traverse": "^7.27.1",
+        "@babel/types": "^7.27.1",
+        "commander": "^11.0.0",
+        "glob": "10.3.0",
+        "typescript": "^5.2.2"
+    }
+}
