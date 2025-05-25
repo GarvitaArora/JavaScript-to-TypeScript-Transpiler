@@ -1,0 +1,95 @@
+{
+  "variableDeclarations": [
+    {
+      "kind": "let",
+      "declarations": [
+        {
+          "name": "x",
+          "type": "NumericLiteral",
+          "tsType": "number"
+        }
+      ]
+    },
+    {
+      "kind": "const",
+      "declarations": [
+        {
+          "name": "obj",
+          "type": "ObjectExpression",
+          "tsType": "{ a: number; b: string }"
+        }
+      ]
+    },
+    {
+      "kind": "const",
+      "declarations": [
+        {
+          "name": "arr",
+          "type": "ArrayExpression",
+          "tsType": "Array<number | string | boolean>"
+        }
+      ]
+    }
+  ],
+  "functionDefinitions": [
+    {
+      "name": "add",
+      "params": [
+        {
+          "name": "a",
+          "tsType": "number"
+        },
+        {
+          "name": "b",
+          "tsType": "number"
+        }
+      ],
+      "returnType": "unknown",
+      "tsType": "(a: number, b: number) => number"
+    }
+  ],
+  "returnStatements": [
+    {
+      "argumentType": "BinaryExpression",
+      "tsType": "number"
+    }
+  ],
+  "objectLiterals": [
+    {
+      "properties": [
+        {
+          "key": "a",
+          "valueType": "NumericLiteral",
+          "tsType": "number"
+        },
+        {
+          "key": "b",
+          "valueType": "StringLiteral",
+          "tsType": "string"
+        }
+      ],
+      "tsType": "{ a: number; b: string }"
+    }
+  ],
+  "arrayLiterals": [
+    {
+      "elementTypes": [
+        "NumericLiteral",
+        "StringLiteral",
+        "BooleanLiteral"
+      ],
+      "tsType": "Array<number | string | boolean>"
+    }
+  ],
+  "typeAnnotations": {
+    "x": "number",
+    "obj": "Obj",
+    "a": "number",
+    "b": "number",
+    "add_return": "number",
+    "arr": "Array<number | string | boolean>"
+  },
+  "interfaces": {
+    "Obj": "{ a: number; b: string }"
+  }
+}
