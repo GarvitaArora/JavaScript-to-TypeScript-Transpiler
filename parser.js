@@ -30,7 +30,7 @@ function analyzeAST(ast) {
     traverse(ast, {
         VariableDeclaration(path) {
             analysis.variableDeclarations.push({
-                kind: path.node.kind,
+                kind: path.node.kind,       // var | let | const
                 declarations: path.node.declarations.map(decl => ({
                     name: decl.id.name,
                     type: decl.init ? decl.init.type : 'undefined'
